@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  weight: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: auto;
+  height: 100%;
+  width: 100%;
+}
+header {
+  display: flex;
+  height: 10vh;
+  padding: 10px 20px 15px;
+  background-color: #02032e;
+}
+
+.logo {
+  display: flex;
+  font-family: "fira Code", cursive;
+  font-size: 1.5em;
+  justify-content: left;
+  align-items: center;
+  color: #ffc000;
+}
+
+.img-logo {
+  padding-left: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #26a6e8;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.9em;
+  transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+  color: #ffc000;
+  text-shadow: 5px 5px 10px #ffc000;
+  transform: scale(1.3);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(11, 36, 65, 0.8),
+      rgba(2, 3, 46, 0.5)
+    ),
+    url("/assets/img/bg-section.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 80vh;
+  align-items: center;
+  padding: 10px 20px 15px;
+  background-color: #0b2441;
+}
+
+section h2 {
+  color: #ffc000;
+  background-color: #02032e;
+  font-size: 5em;
+  margin-bottom: 50px;
+  font-family: "Fira Code", cursive;
+  padding: 10px 70px 10px 70px;
+  border-radius: 10px 70px 10px 70px;
+  box-shadow: -5px -5px 10px #d9ff0b;
+}
+
+.spies-img {
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.spies-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.start-container {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #02032e;
+  color: #1e80b7;
+  padding: 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #259ddd;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 5px 8px 10px #259ddd;
+  transform: translateY(-3px);
+  color: #259ddd;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #02032e;
+  font-family: "fira Code", cursive;
+  font-size: 1em;
+  height: 5vh;
+  color: #ffc000;
+  padding: 20px 30px 20px 30px;
+}
+
+footer li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer a {
+  text-decoration: none;
+  color: #26a6e8;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.9em;
+}
+
+footer a:hover {
+  color: #ffc000;
+  text-shadow: 5px 5px 10px #ffc000;
+}
