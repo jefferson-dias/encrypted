@@ -9,6 +9,13 @@ body {
   height: 100%;
 }
 
+header,
+section,
+footer {
+  min-widght: 320px;
+  max-widght: 700px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -25,7 +32,7 @@ header {
 
 .logo {
   display: flex;
-  font-family: "fira Code", cursive;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1.5em;
   justify-content: left;
   align-items: center;
@@ -49,7 +56,7 @@ header {
 .navbar li {
   list-style: none;
   display: inline-grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 30px;
 }
 
 .navbar a {
@@ -87,10 +94,10 @@ section {
 section h2 {
   color: #ffc000;
   background-color: #02032e;
-  font-size: 5em;
+  font-size: 7em;
   margin-bottom: 50px;
-  font-family: "Fira Code", cursive;
-  padding: 10px 70px 10px 70px;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 10px 40px 10px 40px;
   border-radius: 10px 70px 10px 70px;
   box-shadow: -5px -5px 10px #d9ff0b;
 }
@@ -138,7 +145,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #02032e;
-  font-family: "fira Code", cursive;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 1em;
   height: 5vh;
   color: #ffc000;
@@ -161,3 +168,120 @@ footer a:hover {
   color: #ffc000;
   text-shadow: 5px 5px 10px #ffc000;
 }
+
+@media screen and (max-width: 610px) {
+  
+  .logo {
+    display: flex;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.2em;
+    justify-content: left;
+    align-items: center;
+    color: #ffc000;
+  }
+  
+  .img-logo {
+    padding-left: 0px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .navbar li {
+    list-style: none;
+    display: inline-grid;
+    padding: 10px;
+    margin-left: 25px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #26a6e8;
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.9em;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar a:hover {
+    color: #ffc000;
+    text-shadow: 5px 5px 10px #ffc000;
+    transform: scale(1.3);
+  }
+
+
+  .button {
+    background-color: #02032e;
+    color: #1e80b7;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #259ddd;
+    transition: 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    box-shadow: 5px 8px 10px #259ddd;
+    transform: translateY(-3px);
+    color: #259ddd;
+  }
+
+  .spies-img {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+  }
+
+  section h2 {
+    color: #ffc000;
+    background-color: #02032e;
+    font-size: 3em;
+    margin-bottom: 50px;
+    font-family: "IBM Plex Mono", monospace;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px 35px 5px 35px;
+    box-shadow: -5px -5px 10px #d9ff0b;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #02032e;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.6em;
+    height: 5vh;
+    color: #ffc000;
+    padding: 20px 0px 20px 30px;
+  }
+  
+  footer li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #26a6e8;
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.9em;
+  }
+  
+  footer a:hover {
+    color: #ffc000;
+    text-shadow: 5px 5px 10px #ffc000;
+  }
+
+
