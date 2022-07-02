@@ -161,7 +161,16 @@ footer a {
   text-decoration: none;
   color: #26a6e8;
   font-family: "Press Start 2P", cursive;
+  font-size: 0.5em;
+}
+
+footer p {
   font-size: 0.9em;
+}
+
+.lucas-samuel {
+  font-size: 1em;
+  padding: 10px
 }
 
 footer a:hover {
@@ -169,7 +178,7 @@ footer a:hover {
   text-shadow: 5px 5px 10px #ffc000;
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 650px) {
   
   .logo {
     display: flex;
@@ -218,7 +227,7 @@ footer a:hover {
   .button {
     background-color: #02032e;
     color: #1e80b7;
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -238,16 +247,15 @@ footer a:hover {
   }
 
   .spies-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     transition: 0.5s;
   }
 
   section h2 {
     color: #ffc000;
     background-color: #02032e;
-    font-size: 3em;
-    margin-bottom: 50px;
+    font-size: 3.5em;
     font-family: "IBM Plex Mono", monospace;
     padding: 10px 20px 10px 20px;
     border-radius: 5px 35px 5px 35px;
@@ -256,16 +264,16 @@ footer a:hover {
 
   footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #02032e;
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.6em;
     height: 5vh;
     color: #ffc000;
-    padding: 20px 0px 20px 30px;
+    padding: 20px 5px 20px 5px;
   }
-  
+ 
   footer li {
     list-style: none;
     display: inline-block;
@@ -276,12 +284,18 @@ footer a:hover {
     text-decoration: none;
     color: #26a6e8;
     font-family: "Press Start 2P", cursive;
-    font-size: 0.9em;
+    font-size: 0.3em;
+  }
+
+  .lucas-samuel {
+    font-size: 1.3em;
+    padding: 10px
   }
   
   footer a:hover {
     color: #ffc000;
     text-shadow: 5px 5px 10px #ffc000;
+  
   }
 
 
