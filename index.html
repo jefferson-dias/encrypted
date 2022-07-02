@@ -37,9 +37,9 @@
 
 
             <div class="start-container ">
-                <img src="img/field-agent.png " alt="field-agent " class="spies-img ">
+                <img src="img/field-agent.png " alt="field-agent " class="field-agent-img" id="field-agent">
                 <button class="button " id="Start ">START</button>
-                <img src="img/intelligencer.png " alt="intelligencer " class="spies-img ">
+                <img src="img/intelligencer.png " alt="intelligencer " class="intelligencer-img" id="intelligencer">
             </div>
 
 
@@ -53,6 +53,31 @@
             </ul>
 
         </footer>
+        <div id="pop-up-intelligencer" class="pop-up-intelligencer">
+            <div class="pop-up-intelligencer-content">
+                <img src="img/intelligencer.png " alt="intelligencer" class="rules-spies-img" id="rules-intelligence">
+                <h2>Intelligencer</h2>
+                <p>
+                    This spy already knows where all the colors and answers are, and he must tell it, by saying only one word (not belonging from the board) to the field agent
+                </p>
+                <button class="close-button-intelligencer" id="close-intelligencer">Close</button>
+            </div>
+        </div>
+
+        <div id="pop-up-field-agent" class="pop-up-field-agent">
+            <div class="pop-up-field-agent-content">
+                <img src="img/field-agent.png " alt="field-agent" class="rules-spies-img" id="rules-field-agent">
+                <h2>Field Agent</h2>
+                <p>
+                    This spy has to find the right gates, choosing the word cards that has the color from his team, using the intelligencer encrypted messages
+
+                </p>
+                <button class="close-button-field-agent" id="close-field-agent">Close</button>
+            </div>
+        </div>
+
+        <!--import pop-up-js -->
+        <script src="../js/pop-up.js"></script>
 
     </main>
 </body>
