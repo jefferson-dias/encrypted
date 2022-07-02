@@ -77,7 +77,7 @@ section {
       rgba(11, 36, 65, 0.8),
       rgba(2, 3, 46, 0.5)
     ),
-    url("/img/bg-section.png");
+    url('/img/bg-section.png');
   height: 80vh;
   align-items: center;
   padding: 10px 20px 15px;
