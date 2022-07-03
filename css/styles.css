@@ -65,7 +65,7 @@ section {
       rgba(11, 36, 65, 0.8),
       rgba(2, 3, 46, 0.8)
     ),
-    url("/img/bg-section.png");
+    url("../img/bg-section.png");
   width: 100vw;
   height: 75vh;
   display: flex;
