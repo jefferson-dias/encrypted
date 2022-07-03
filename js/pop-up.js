@@ -8,18 +8,18 @@ function closePopUp(popUpId) {
     popUp.classList.remove("show");
 }
 
-const buttonInteligent = document.querySelector(".intelligencer-img");
+const buttonInteligent = document.getElementById("intelligencer");
 buttonInteligent.addEventListener("click", function() {
     popUp("pop-up-intelligencer");
 });
 
-const buttonFieldAgent = document.querySelector(".field-agent-img");
+const buttonFieldAgent = document.getElementById("field-agent");
 buttonFieldAgent.addEventListener("click", function() {
     popUp("pop-up-field-agent");
 });
 
-const closeButton = document.querySelector(".close-button-intelligencer");
-closeButton.addEventListener("click", function() {
+const closeButtonIntelligencer = document.querySelector(".close-button-intelligencer");
+closeButtonIntelligencer.addEventListener("click", function() {
     closePopUp("pop-up-intelligencer");
 });
 
