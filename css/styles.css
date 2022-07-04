@@ -284,11 +284,11 @@ footer li {
 
   header {
     background-color: #02032e;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2vw;
+    padding: 0 1vw;
   }
 
   header .logo {
@@ -296,10 +296,11 @@ footer li {
     justify-content: center;
     align-items: center;
     color: #ffc000;
+    font-size: 1.2em;
   }
 
   header img {
-    width: 70px;
+    width: 60px;
     height: auto;
   }
 
@@ -319,7 +320,7 @@ footer li {
       ),
       url("../img/bg-section.png");
     width: 100vw;
-    height: 75vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
