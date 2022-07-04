@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   border-box: box-sizing;
-  font-family: "Fira Code", monospace;
+  font-family: "Bebas Neue", cursive;
 }
 
 main {
@@ -25,12 +25,13 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
   color: #ffc000;
 }
 
 header img {
-  width: 70px;
-  height: 70px;
+  width: 5rem;
+  height: auto;
 }
 
 .navbar {
@@ -81,12 +82,13 @@ section .start-content {
 }
 
 section h2 {
-  font-size: 4rem;
+  font-size: 7rem;
+  font-weight: 550;
   background-color: #02032e;
   color: #ffc000;
-  padding: 1rem 2rem;
-  margin: 2.4rem;
-  border-radius: 10px 70px 10px 70px;
+  padding: 0 3vw;
+  margin: 20px auto;
+  border-radius: 10px 35px;
   box-shadow: -5px -5px 10px #d9ff0b;
 }
 
@@ -107,16 +109,16 @@ section img {
 section button {
   background-color: #02032e;
   color: #1e80b7;
-  padding: 10px 25px;
+  padding: 6px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.9em;
   font-weight: 900;
   margin: 0 100px;
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px #259ddd;
+  box-shadow: 1px 1px 10px #259ddd;
   transition: 0.3s ease-in-out;
 }
 
@@ -133,7 +135,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   background-color: #02032e;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Bebas Neue", cursive;
   font-size: 1em;
   height: 10vh;
   color: #ffc000;
@@ -180,7 +182,7 @@ footer li {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Bebas Neue", cursive;
   font-size: 1.5em;
   text-align: center;
 }
@@ -195,14 +197,12 @@ footer li {
 
 .pop-up-intelligencer h2,
 .pop-up-field-agent h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #28ee3d;
-  margin-bottom: 20px;
 }
 .pop-up-intelligencer p,
 .pop-up-field-agent p {
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 2rem;
   color: #29abef;
 }
 
@@ -258,7 +258,7 @@ footer li {
   display: inline-block;
   font-size: 20px;
   font-weight: 900;
-  margin: 50px 20px 10px;
+  margin: 10px 20px 10px;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 1px 1px 5px #259ddd;
@@ -272,22 +272,186 @@ footer li {
   color: #ffc000;
 }
 
-@media screen and (max-width: 800px) {
-  .pop-up-intelligencer,
-  .pop-up-field-agent {
+/* responsivo 740px */
+
+@media screen and (max-width: 740px) {
+  main {
+    background-color: blue;
     width: 100vw;
     height: 100vh;
   }
-  .pop-up-intelligencer-content,
-  .pop-up-field-agent-content {
-    width: 50;
-    height: 80vh;
+  /* header */
+
+  header {
+    background-color: #02032e;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
   }
 
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffc000;
+  }
+
+  header img {
+    width: 70px;
+    height: auto;
+  }
+
+  .navbar {
+    display: none;
+    justify-content: right;
+    align-items: center;
+  }
+
+  /* section start */
+
+  section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(11, 36, 65, 0.8),
+        rgba(2, 3, 46, 0.8)
+      ),
+      url("../img/bg-section.png");
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .start-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  section h2 {
+    font-size: 15vw;
+    font-weight: 550;
+    background-color: #02032e;
+    color: #ffc000;
+    padding: 1px 3vw;
+    margin: 20px auto;
+    border-radius: 10px 35px;
+    box-shadow: -5px -5px 10px #d9ff0b;
+  }
+
+  .spies-img {
+    transition: 0.5s ease-in-out;
+  }
+
+  .spies-img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  section img {
+    width: auto;
+    height: 16vh;
+  }
+
+  section button {
+    background-color: #02032e;
+    color: #1e80b7;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin: 0 10px;
+    padding: 6px 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #259ddd;
+    transition: 0.3s ease-in-out;
+  }
+
+  section button:hover {
+    transform: scale(1.1);
+    color: #ffc000;
+    box-shadow: 7px 7px 5px #259ddd;
+  }
+
+  /* footer */
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #02032e;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1em;
+    height: 10vh;
+    color: #ffc000;
+  }
+
+  footer p {
+    color: #ffc000;
+    font-size: 0.4rem;
+  }
+
+  footer a {
+  }
+
+  .prof-lucas {
+    display: block;
+    font-size: 2.5em;
+    padding: 0px;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer li {
+    list-style: none;
+    padding: 1vw;
+  }
+
+  /*pop-up-rules */
+
+  .rules-spies-img {
+    width: 9rem;
+    height: auto;
+    transition: 0.5s ease-in-out;
+  }
+
+  .rules-spies-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .pop-up-intelligencer,
+  .pop-up-field-agent {
+    background-color: rgba(0, 0, 0, 5);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .pop-up-intelligencer-content,
+  .pop-up-intelligencer-content,
+  .pop-up-field-agent-content {
+    width: 70vw;
+    height: 70vh;
+  }
+
+  .pop-up-intelligencer-content h2,
+  .pop-up-field-agent-content h2 {
+    font-size: 2.6rem;
+  }
   .pop-up-intelligencer p,
   .pop-up-field-agent p {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.8rem;
     color: #29abef;
   }
 }
