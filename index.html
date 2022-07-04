@@ -18,30 +18,22 @@
 <body>
     <main>
 
-        <header>
-
+        <section class="top-nav">
             <div class="logo">
-                <img class="logo-img" src="img/logo.png " alt="Encrypted">
-                <h1 class="logo-text">ENCRYPTED </h1>
-
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <h1>Encrypted</h1>
             </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#">Rules</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <!-- menu hamburguer -->
-            <div class="menu-hamburger">
-                <div class="menu-hamburger-content">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+            <ul class="menu">
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </section>
 
         <section class="start-container">
 
