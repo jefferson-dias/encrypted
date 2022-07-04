@@ -2,11 +2,10 @@
   padding: 0;
   margin: 0;
   border-box: box-sizing;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 main {
-  background-color: blue;
   width: 100vw;
   height: 100vh;
 }
@@ -14,11 +13,10 @@ main {
 
 header {
   background-color: #02032e;
-  height: 15vh;
+  height: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 2vw;
 }
 
 header .logo {
@@ -30,7 +28,7 @@ header .logo {
 }
 
 header img {
-  width: 5rem;
+  width: 4rem;
   height: auto;
 }
 
@@ -43,14 +41,14 @@ header img {
 .navbar li {
   list-style: none;
   display: inline-grid;
-  padding: 30px;
+  padding: 1rem;
 }
 
 .navbar a {
   text-decoration: none;
   color: #26a6e8;
   font-family: "Press Start 2P", cursive;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   transition: all 0.3s ease-in-out;
 }
 .navbar a:hover {
@@ -58,6 +56,11 @@ header img {
   text-shadow: 5px 5px 10px #ffc000;
   transform: scale(1.3);
 }
+
+.menu-hamburger {
+  display: none;
+}
+
 /* section start */
 
 section {
@@ -67,8 +70,9 @@ section {
       rgba(2, 3, 46, 0.8)
     ),
     url("../img/bg-section.png");
+  background-size: cover;
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,17 +97,14 @@ section h2 {
 }
 
 .spies-img {
+  width: 12rem;
+  height: auto;
   transition: 0.5s ease-in-out;
 }
 
 .spies-img:hover {
   transform: scale(1.2);
   cursor: pointer;
-}
-
-section img {
-  width: 200px;
-  height: 200px;
 }
 
 section button {
@@ -115,7 +116,7 @@ section button {
   display: inline-block;
   font-size: 1.9em;
   font-weight: 900;
-  margin: 0 100px;
+  margin: 0 2rem;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 1px 1px 10px #259ddd;
@@ -143,30 +144,32 @@ footer {
 
 footer p {
   color: #ffc000;
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
-.prof-lucas {
-  font-size: 2em;
-  padding: 10px;
-}
 footer a {
   text-decoration: none;
   color: #26a6e8;
   font-family: "Press Start 2P", cursive;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 footer ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 footer li {
   list-style: none;
   display: inline-grid;
-  padding: 1vw;
+  padding: 0.5rem;
+}
+
+.prof-lucas {
+  font-size: 1.3em;
+  padding: 0;
+  display: block;
 }
 
 .pop-up-intelligencer,
@@ -276,7 +279,6 @@ footer li {
 
 @media screen and (max-width: 740px) {
   main {
-    background-color: blue;
     width: 100vw;
     height: 100vh;
   }
@@ -286,9 +288,8 @@ footer li {
     background-color: #02032e;
     height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 1vw;
   }
 
   header .logo {
@@ -306,10 +307,27 @@ footer li {
 
   .navbar {
     display: none;
-    justify-content: right;
-    align-items: center;
   }
-
+  .menu-hamburger {
+    display: flex;
+  }
+  .menu-hamburger-content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 0.4rem;
+    border: 1px solid #ffc000;
+    border-radius: 10px;
+  }
+  .menu-hamburger-content li {
+    color: black;
+    background-color: #ffc000;
+    list-style-type: none;
+    margin: 0.2rem;
+    width: 7vw;
+    height: 0.4vh;
+  }
   /* section start */
 
   section {
@@ -319,6 +337,7 @@ footer li {
         rgba(2, 3, 46, 0.8)
       ),
       url("../img/bg-section.png");
+    background-size: cover;
     width: 100vw;
     height: 80vh;
     display: flex;
@@ -338,24 +357,25 @@ footer li {
     font-weight: 550;
     background-color: #02032e;
     color: #ffc000;
-    padding: 1px 3vw;
+    padding: 1px 4vw;
     margin: 20px auto;
     border-radius: 10px 35px;
     box-shadow: -5px -5px 10px #d9ff0b;
   }
 
+  section img {
+    width: 10x;
+    height: auto;
+  }
+
   .spies-img {
+    width: 34vw;
     transition: 0.5s ease-in-out;
   }
 
   .spies-img:hover {
     transform: scale(1.2);
     cursor: pointer;
-  }
-
-  section img {
-    width: auto;
-    height: 16vh;
   }
 
   section button {
@@ -395,7 +415,7 @@ footer li {
 
   footer p {
     color: #ffc000;
-    font-size: 0.4rem;
+    font-size: 0.7rem;
   }
 
   footer a {
@@ -403,8 +423,7 @@ footer li {
 
   .prof-lucas {
     display: block;
-    font-size: 2.5em;
-    padding: 0px;
+    font-size: 1.7em;
   }
 
   footer ul {
@@ -416,6 +435,7 @@ footer li {
 
   footer li {
     list-style: none;
+    font-size: 0.6rem;
     padding: 1vw;
   }
 
