@@ -59,7 +59,7 @@ main {
 .menu a {
   text-decoration: none;
   font-family: "Press Start 2P", cursive;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #00baf0;
 }
 .menu a:hover {
@@ -399,6 +399,7 @@ footer li {
 
   #menu-toggle:checked ~ .menu a {
     display: flex;
+    font-size: 1.1rem;
   }
   #menu-toggle ~ .menu a {
     display: none;
