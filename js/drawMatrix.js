@@ -27,4 +27,4 @@ function drawMatrix() {
     });
 
 }
-setInterval(drawMatrix, 150);
+setInterval(drawMatrix, 90);
