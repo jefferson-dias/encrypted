@@ -1,0 +1,13 @@
+.logo {
+    font-size: 1.9rem;
+    color: #ffc000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    width: auto;
+    height: 10vh;
+    padding: 0.5rem 0;
+  }  
+
