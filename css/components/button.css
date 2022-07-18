@@ -1,0 +1,22 @@
+section button {
+    background-color: #02032e;
+    color: #1e80b7;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.9em;
+    font-weight: 900;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #259ddd;
+    transition: 0.3s ease-in-out;
+  }
+  
+  section button:hover {
+    transform: scale(1.1);
+    color: #ffc000;
+    box-shadow: 7px 7px 5px #259ddd;
+  }
+  
