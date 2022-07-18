@@ -11,9 +11,15 @@
     left: 0;
   }
   
-  section .start-content {
+.start-content {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@media screen and (max-width: 740px) {
+
+  .start-content {
+    padding-bottom: 30vh;
   }
-  
+}
