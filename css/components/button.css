@@ -1,4 +1,4 @@
-section button {
+.button-start {
     background-color: #02032e;
     color: #1e80b7;
     padding: 5px 15px;
@@ -14,9 +14,22 @@ section button {
     transition: 0.3s ease-in-out;
   }
   
-  section button:hover {
+.button-start:hover {
     transform: scale(1.1);
     color: #ffc000;
     box-shadow: 7px 7px 5px #259ddd;
   }
   
+.button-start.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2.2s;
+  }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

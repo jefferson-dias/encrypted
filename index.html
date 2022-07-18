@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/reset.css".css">
-    <link rel="stylesheet" href="css/components/header.css">
-    <link rel="stylesheet" href="css/components/logo.css">
-    <link rel="stylesheet" href="css/components/menu.css">
-    <link rel="stylesheet" href="css/components/canvas.css">
-    <link rel="stylesheet" href="css/components/spies-img.css">
-    <link rel="stylesheet" href="css/components/start-container.css">
-    <link rel="stylesheet" href="css/components/footer.css">
-    <link rel="stylesheet" href="css/components/button.css">
-    <link rel="stylesheet" href="css/components/pop-up.css">
-    <link rel="stylesheet" href="css/components/title.css">
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/logo.css" />
+    <link rel="stylesheet" href="css/components/menu.css" />
+    <link rel="stylesheet" href="css/components/canvas.css" />
+    <link rel="stylesheet" href="css/components/spies-img.css" />
+    <link rel="stylesheet" href="css/components/start-container.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/components/button.css" />
+    <link rel="stylesheet" href="css/components/pop-up.css" />
+    <link rel="stylesheet" href="css/components/title.css" />
     <title>Encrypted</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
+      <header class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+          <h1>Encrypted</h1>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="#">Rules</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </header>
 
-        <header class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="logo">
-                </a>
-                <h1>Encrypted</h1>
-            </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-          </label>
-            <ul class="menu">
-                <li><a href="#">Rules</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </header>
+      <canvas id="canvas" width="500" height="200"></canvas>
+      <section class="start-container">
+        <h2>ENCRYPTED</h2>
 
-        <canvas id="canvas" width="500" height="200"></canvas>
-        <section class="start-container">
-
-            <h2>ENCRYPTED</h2>
-
-
-            <div class="start-content ">
-                <img src="img/field-agent.png " alt="field-agent " class="spies-img" id="field-agent">
-                <a href="table.html"> <button class="button-start" id="Start ">START</button></a> 
-                <img src="img/intelligencer.png " alt="intelligencer " class="spies-img" id="intelligencer">
-            </div>
-
-
-        </section>
-    <!-- footer 
+        <div class="start-content">
+          <img
+            src="img/field-agent.png "
+            alt="field-agent "
+            class="spies-img showAgent"
+            id="field-agent"
+          />
+          <a href="table.html">
+            <button class="button-start fadeIn" id="Start ">START</button></a
+          >
+          <img
+            src="img/intelligencer.png "
+            alt="intelligencer "
+            class="spies-img showIntelligencer"
+            id="intelligencer"
+          />
+        </div>
+      </section>
+      <!-- footer 
 
         <footer>
             <p>&copy; 2022 Jefferson Dias</p>
@@ -72,35 +81,50 @@
         </footer>
         
     -->
-        <!-- pop-up rules -->
-        <div id="pop-up-intelligencer" class="pop-up-intelligencer">
-            <div class="pop-up-intelligencer-content">
-                <img src="img/intelligencer.png " alt="intelligencer" class="rules-spies-img" id="rules-intelligence">
-                <h2>Intelligencer</h2>
-                <p>
-                    This spy already knows where all the colors and answers are, and he must tell it, by saying only one word (not belonging from the board) to the field agent
-                </p>
-                <button class="close-button-intelligencer" id="close-intelligencer">Close</button>
-            </div>
+      <!-- pop-up rules -->
+      <div id="pop-up-intelligencer" class="pop-up-intelligencer">
+        <div class="pop-up-intelligencer-content">
+          <img
+            src="img/intelligencer.png "
+            alt="intelligencer"
+            class="rules-spies-img"
+            id="rules-intelligence"
+          />
+          <h2>Intelligencer</h2>
+          <p>
+            This spy already knows where all the colors and answers are, and he
+            must tell it, by saying only one word (not belonging from the board)
+            to the field agent
+          </p>
+          <button class="close-button-intelligencer" id="close-intelligencer">
+            Close
+          </button>
         </div>
+      </div>
 
-        <div id="pop-up-field-agent" class="pop-up-field-agent">
-            <div class="pop-up-field-agent-content">
-                <img src="img/field-agent.png " alt="field-agent" class="rules-spies-img" id="rules-field-agent">
-                <h2>Field Agent</h2>
-                <p>
-                    This spy has to find the right gates, choosing the word cards that has the color from his team, using the inteligencer encrypted messages
-
-                </p>
-                <button class="close-button-field-agent" id="close-field-agent">Close</button>
-            </div>
+      <div id="pop-up-field-agent" class="pop-up-field-agent">
+        <div class="pop-up-field-agent-content">
+          <img
+            src="img/field-agent.png "
+            alt="field-agent"
+            class="rules-spies-img"
+            id="rules-field-agent"
+          />
+          <h2>Field Agent</h2>
+          <p>
+            This spy has to find the right gates, choosing the word cards that
+            has the color from his team, using the inteligencer encrypted
+            messages
+          </p>
+          <button class="close-button-field-agent" id="close-field-agent">
+            Close
+          </button>
         </div>
-
+      </div>
     </main>
     <!--import pop-up-js -->
     <script src="js/pop-up.js "></script>
     <!-- import drawMatrix.js -->
     <script src="js/drawMatrix.js "></script>
-</body>
-
+  </body>
 </html>

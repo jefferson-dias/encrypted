@@ -1,10 +1,49 @@
 .spies-img {
+  width: 10em;
+  height: auto;
+  transition: 0.5s ease-in-out;
+  margin: 0 0.7em;  
+}
+.spies-img:hover {
+  transform: scale(1.2);
+  cursor: pointer;   
+}
+
+@media screen and (max-width: 740px) {
+
+.spies-img {
     width: 8rem;
     height: auto;
     transition: 0.5s ease-in-out;
+    margin: 0 0.7em;  
   }
   
-  .spies-img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+.spies-img.showAgent{
+    animation-name: showLeft;
+    animation-duration: 1.5s;
+}
+
+@keyframes showLeft {
+  0% {
+    transform: translateX(-50vw);
   }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.spies-img.showIntelligencer{
+    animation-name: showRight;
+    animation-duration: 1.5s;
+}
+
+@keyframes showRight {
+  0% {
+    transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+}
