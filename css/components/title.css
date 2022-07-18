@@ -1,0 +1,23 @@
+section h2 {
+    font-size: 7rem;
+    font-weight: 550;
+    background-color: #02032e;
+    color: #ffc000;
+    padding: 0 3vw;
+    margin: 20px auto;
+    border-radius: 10px 35px;
+    box-shadow: -5px -5px 10px #d9ff0b;
+  }
+
+  @media screen and (max-width: 740px) {
+    section h2 {
+        font-size: 15vw;
+        font-weight: 550;
+        background-color: #02032e;
+        color: #ffc000;
+        padding: 1px 4vw;
+        margin: 20px auto;
+        border-radius: 10px 35px;
+        box-shadow: -5px -5px 10px #d9ff0b;
+      }
+    }
