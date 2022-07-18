@@ -1,0 +1,19 @@
+.start-container {
+    display: flex;
+    background-size: cover;
+    width: 100vw;
+    height: 78vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+  }
+  
+  section .start-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
