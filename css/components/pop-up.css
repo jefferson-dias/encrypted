@@ -12,8 +12,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5em;
+  font-family: "Fira Code", sans-serif;
   text-align: center;
 }
 
@@ -38,12 +37,12 @@
 
 .pop-up-intelligencer h2,
 .pop-up-field-agent h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #28ee3d;
 }
 .pop-up-intelligencer p,
 .pop-up-field-agent p {
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   color: #29abef;
 }
 
@@ -52,20 +51,38 @@
 .pop-up-field-agent-content {
   background-image: linear-gradient(
       to bottom,
-      rgba(11, 36, 65, 0.8),
-      rgba(2, 3, 46, 0.9)
-    ),
-    url("../img/bg-section.png");
+      rgba(11, 36, 65, 0.7),
+      rgba(2, 3, 46, 1)
+    );
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 60vw;
   height: 70vh;
-  border-radius: 20px 120px 20px 50px;
-  padding: 10px;
-  border: 10px solid #29abef;
-  animation: pop-up-intelligencer-content 0.5s ease-in-out;
+  border-radius: 20px 80px 20px 50px;
+  padding: 15px;
+  box-shadow: inset -3px -3px 5px #29abef;
+  
+}
+
+.pop-up-intelligencer p::after,
+.pop-up-field-agent p::after{
+  content: "|";
+  opacity: 1;
+  margin-left: 5px;
+  animation: blink-rules .7s infinite;
+  
+}
+
+@keyframes blink-rules {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  
 }
 
 .close-button-intelligencer,
@@ -104,8 +121,8 @@
   .pop-up-intelligencer-content,
   .pop-up-intelligencer-content,
   .pop-up-field-agent-content {
-    width: 70vw;
-    height: 70vh;
+    width: 85vw;
+    height: 80vh;
   }
 
   .pop-up-intelligencer-content h2,
@@ -114,7 +131,7 @@
   }
   .pop-up-intelligencer p,
   .pop-up-field-agent p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: #29abef;
   }
 }
