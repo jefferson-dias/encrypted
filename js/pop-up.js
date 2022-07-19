@@ -27,7 +27,6 @@ function closePopUp(popUpId) {
 const buttonInteligent = document.getElementById("intelligencer");
 buttonInteligent.addEventListener("click", function() {
     popUp("pop-up-intelligencer");
-    popUp("rulesWriter-intelligencer");
     rulesWriter(document.getElementById("rulesWriter-intelligencer"));
 
 });
@@ -35,7 +34,6 @@ buttonInteligent.addEventListener("click", function() {
 const buttonFieldAgent = document.getElementById("field-agent");
 buttonFieldAgent.addEventListener("click", function() {
     popUp("pop-up-field-agent");
-    popUp("rulesWriter-field-agent");
     rulesWriter(document.getElementById("rulesWriter-field-agent"));
 });
 

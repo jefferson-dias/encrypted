@@ -1,5 +1,5 @@
 .logo {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     color: #ffc000;
     display: flex;
     justify-content: center;
@@ -7,7 +7,8 @@
   }
   .logo img {
     width: auto;
-    height: 10vh;
+    height: 9vh;
     padding: 0.5rem 0;
+    
   }  
 
