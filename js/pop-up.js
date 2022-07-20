@@ -1,16 +1,19 @@
+const rulesAgent = document.getElementById("rulesWriter-field-agent");
+const rulesIntelligencer = document.getElementById("rulesWriter-intelligencer");
+const writerTimer = 30;
+
 // write rules
 
-function writerCondition (condition, element) {
-    if (condition === true) {
-        writerRules(element);
-    }
+function writerRules(element) {
+    const textArray = element.innerHTML.split("");
+    element.innerHTML = '';
+    textArray.forEach((letter, i) => {
+            setTimeout(() => {
+                element.innerHTML += letter;
+            }, writerTimer * i);       
+    });
 }
 
-function writerRules(element) {
-    const textArray = element.innerHTML.split('');
-    element.innerHTML = '';
-    textArray.forEach((letter, i) => setTimeout(() => element.innerHTML += letter, 70 * i));
-}
 
 // PopUp RUles
 
@@ -26,31 +29,26 @@ function closePopUp(popUpId) {
 
 // call functions 
 
-const rulesAgent = document.getElementById("rulesWriter-field-agent");
-const rulesIntelligencer = document.getElementById("rulesWriter-intelligencer");
-
 const buttonFieldAgent = document.getElementById("field-agent");
 buttonFieldAgent.addEventListener("click", function() {
     popUp("pop-up-field-agent");
-    writerCondition(true, rulesAgent);
+    writerRules(rulesAgent);
 });
 
 const buttonInteligent = document.getElementById("intelligencer");
 buttonInteligent.addEventListener("click", function() {
     popUp("pop-up-intelligencer");
-    writerCondition(true, rulesIntelligencer);
+    writerRules(rulesIntelligencer);
 });
 
     
 const closeButtonFieldAgent = document.querySelector(".close-button-field-agent");
 closeButtonFieldAgent.addEventListener("click", function() {
     closePopUp("pop-up-field-agent");
-    writerCondition(false);
 
 });
 
 const closeButtonIntelligencer = document.querySelector(".close-button-intelligencer");
 closeButtonIntelligencer.addEventListener("click", function() {
     closePopUp("pop-up-intelligencer");
-    writerCondition(false);
 });
