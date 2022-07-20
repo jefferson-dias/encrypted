@@ -45,12 +45,12 @@ buttonInteligent.addEventListener("click", function() {
 const closeButtonFieldAgent = document.querySelector(".close-button-field-agent");
 closeButtonFieldAgent.addEventListener("click", function() {
     closePopUp("pop-up-field-agent");
-    writerCondition(false, rulesAgent);
+    writerCondition(false);
 
 });
 
 const closeButtonIntelligencer = document.querySelector(".close-button-intelligencer");
 closeButtonIntelligencer.addEventListener("click", function() {
     closePopUp("pop-up-intelligencer");
-    writerCondition(false, rulesIntelligencer);
+    writerCondition(false);
 });
