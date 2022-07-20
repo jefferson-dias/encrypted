@@ -1,18 +1,16 @@
 // write rules
 
-let close = true;
-
-function rulesWriter(element) {
-    const textArray = element.innerHTML.split('');
-    element.innerHTML = '';
-    textArray.forEach((letter, i) => {
-        setTimeout(() => element.innerHTML += letter, 65 * i);
-        });
+function writerCondition (condition, element) {
+    if (condition === true) {
+        writerRules(element);
+    }
 }
 
-
-
-const rules = document.querySelector('.rulesWriter.show');
+function writerRules(element) {
+    const textArray = element.innerHTML.split('');
+    element.innerHTML = '';
+    textArray.forEach((letter, i) => setTimeout(() => element.innerHTML += letter, 70 * i));
+}
 
 // PopUp RUles
 
@@ -26,30 +24,33 @@ function closePopUp(popUpId) {
     popUp.classList.remove("show");
 }
 
+// call functions 
 
-const buttonInteligent = document.getElementById("intelligencer");
-buttonInteligent.addEventListener("click", function() {
-    popUp("pop-up-intelligencer");
-    rulesWriter(document.getElementById("rulesWriter-intelligencer"));
-
-});
+const rulesAgent = document.getElementById("rulesWriter-field-agent");
+const rulesIntelligencer = document.getElementById("rulesWriter-intelligencer");
 
 const buttonFieldAgent = document.getElementById("field-agent");
 buttonFieldAgent.addEventListener("click", function() {
     popUp("pop-up-field-agent");
-    rulesWriter(document.getElementById("rulesWriter-field-agent"));
+    writerCondition(true, rulesAgent);
+});
+
+const buttonInteligent = document.getElementById("intelligencer");
+buttonInteligent.addEventListener("click", function() {
+    popUp("pop-up-intelligencer");
+    writerCondition(true, rulesIntelligencer);
+});
+
+    
+const closeButtonFieldAgent = document.querySelector(".close-button-field-agent");
+closeButtonFieldAgent.addEventListener("click", function() {
+    closePopUp("pop-up-field-agent");
+    writerCondition(false, rulesAgent);
+
 });
 
 const closeButtonIntelligencer = document.querySelector(".close-button-intelligencer");
 closeButtonIntelligencer.addEventListener("click", function() {
     closePopUp("pop-up-intelligencer");
-    close = false;
+    writerCondition(false, rulesIntelligencer);
 });
-
-const closeButtonFieldAgent = document.querySelector(".close-button-field-agent");
-closeButtonFieldAgent.addEventListener("click", function() {
-    closePopUp("pop-up-field-agent");
-    close = false;
-    
-});
-
