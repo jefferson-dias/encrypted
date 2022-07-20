@@ -1,14 +1,16 @@
 // write rules
 
+let close = true;
+
 function rulesWriter(element) {
     const textArray = element.innerHTML.split('');
     element.innerHTML = '';
     textArray.forEach((letter, i) => {
-        setTimeout(() => element.innerHTML += letter, 75 * i);
-        console.log(letter);
-    }
-    );
+        setTimeout(() => element.innerHTML += letter, 70 * i);
+        });
 }
+
+
 
 const rules = document.querySelector('.rulesWriter.show');
 
@@ -23,6 +25,7 @@ function closePopUp(popUpId) {
     const popUp = document.getElementById(popUpId);
     popUp.classList.remove("show");
 }
+
 
 const buttonInteligent = document.getElementById("intelligencer");
 buttonInteligent.addEventListener("click", function() {
@@ -40,12 +43,13 @@ buttonFieldAgent.addEventListener("click", function() {
 const closeButtonIntelligencer = document.querySelector(".close-button-intelligencer");
 closeButtonIntelligencer.addEventListener("click", function() {
     closePopUp("pop-up-intelligencer");
-    closePopUp("rulesWriter-intelligencer");
+    close = false;
 });
 
 const closeButtonFieldAgent = document.querySelector(".close-button-field-agent");
 closeButtonFieldAgent.addEventListener("click", function() {
     closePopUp("pop-up-field-agent");
-    closePopUp("rulesWriter-field-agent");
+    close = false;
+    
 });
 

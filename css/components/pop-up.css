@@ -70,7 +70,7 @@
 .pop-up-field-agent p::after{
   content: "|";
   opacity: 1;
-  margin-left: 5px;
+  margin-left: 3px;
   animation: blink-rules .7s infinite;
   
 }
