@@ -68,9 +68,9 @@
 
 .pop-up-intelligencer p::after,
 .pop-up-field-agent p::after{
-  content: "|";
+  content: "_";
   opacity: 1;
-  margin-left: 4px;
+  margin-left: 2px;
   animation: blink-rules .7s infinite;
   
 }
