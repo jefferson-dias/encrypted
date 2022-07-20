@@ -6,7 +6,7 @@ function rulesWriter(element) {
     const textArray = element.innerHTML.split('');
     element.innerHTML = '';
     textArray.forEach((letter, i) => {
-        setTimeout(() => element.innerHTML += letter, 70 * i);
+        setTimeout(() => element.innerHTML += letter, 65 * i);
         });
 }
 
