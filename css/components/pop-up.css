@@ -95,7 +95,7 @@
   display: inline-block;
   font-size: 20px;
   font-weight: 900;
-  margin: 0px 0px 70px 0px;
+  margin: 0px 0px 20px 0px;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 1px 1px 5px #259ddd;
@@ -127,7 +127,7 @@
   .pop-up-intelligencer-content,
   .pop-up-field-agent-content {
     width: 80vw;
-    height: 70vh;
+    height: 65vh;
     position: fixed; 
     top: 5vh;
 
@@ -139,9 +139,9 @@
   }
   .pop-up-intelligencer p,
   .pop-up-field-agent p {
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #29abef;
     padding: 0.3em;
-    height: 40vh;
+    height: 50vh;
   }
 }
